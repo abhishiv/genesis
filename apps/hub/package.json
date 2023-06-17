@@ -1,0 +1,40 @@
+{
+  "name": "@gratico/hub",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite --debug",
+    "test": "npx vitest --run --passWithNoTests",
+    "coverage": "vitest run --coverage --run --passWithNoTests",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.12.1",
+    "animejs": "^3.2.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^4.0.2",
+    "rocky7": "*",
+    "rocky7-router": "*",
+    "sass": "^1.63.2"
+  },
+  "devDependencies": {
+    "vite-plugin-mkcert": "^1.15.0",
+    "@types/animejs": "^3.1.7",
+    "@types/body-parser": "^1.19.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/morgan": "^1.9.4",
+    "@vercel/node": "^2.10.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.3.9",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "regions": ["fra1"],
+  "rewrites": [
+    { "source": "/api/oauth/authorize", "destination": "/api/oauth" },
+    { "source": "/api/oauth/token", "destination": "/api/oauth" },
+    { "source": "/api/auth/me", "destination": "/api/auth" },
+    { "source": "/api/auth/cookie", "destination": "/api/auth" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public,max-age=31536000,immutable"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/auth.ts": {
+      "memory": 128,
+      "maxDuration": 10
+    },
+    "api/oauth.py": {
+      "memory": 256,
+      "maxDuration": 30
+    }
+  }
+}

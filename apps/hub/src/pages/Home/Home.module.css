@@ -1,0 +1,27 @@
+.integrations {
+  font-size: 36px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.integrations i {
+  margin: 0 10px 0 0;
+}
+.tagline {
+  position: static;
+  margin: 0 0 10px 0;
+}
+.taglineColumn {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.hero {
+  padding: 0;
+  padding-bottom: 75.24%;
+  position: relative;
+  background-image: url("../../images/hero1.svg");
+  background-size: contain;
+}

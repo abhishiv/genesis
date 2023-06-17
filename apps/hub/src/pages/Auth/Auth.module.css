@@ -1,0 +1,49 @@
+.divider {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+.divider > p {
+  margin: 0;
+  font-weight: normal;
+  padding: 0 5px 0 0;
+  font-weight: bold;
+}
+
+.divider > div {
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  width: 100%;
+  top: 1px;
+}
+
+.socialLogin {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socialLogin > a {
+  margin: 7px 3px;
+}
+
+.github {
+  background: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+
+.apple {
+  background: white !important;
+  color: #000 !important;
+}
+
+.google {
+  background: indianred !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+
+.socialLogin .btn {
+  margin: 5px 5px;
+}
