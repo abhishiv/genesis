@@ -5,6 +5,7 @@
 .env
 
 dist
+dist2
 build
 
 node_modules
